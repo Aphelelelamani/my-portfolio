@@ -1,0 +1,375 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.Logo {
+  position: relative;
+  margin: 0 0 0 2rem;
+  width: 10%;
+  animation: myRotation 5s infinite;
+  -webkit-animation: myRotation 30s infinite;
+}
+
+@keyframes myRotation {
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
+}
+.menu-trigger .menuIcon {
+  position: sticky;
+  top: 20px;
+  right: 20px;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+  margin: 1rem;
+  background-color: black;
+}
+
+.menu {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: black;
+  justify-content: center;
+  align-items: center;
+}
+.menu ul {
+  padding: 3rem;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.menu ul h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+.menu ul li {
+  display: flex;
+  line-height: 8rem;
+  list-style: none;
+}
+.menu ul .NavLink {
+  text-decoration: none;
+  color: white;
+  width: -moz-max-content;
+  width: max-content;
+}
+.menu ul .NavLink img {
+  width: 1.5rem;
+  margin-right: 1rem;
+}
+
+.menu.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: var(500ms) ease;
+  -webkit-transition: var(500ms) ease;
+  -moz-transition: var(500ms) ease;
+  -ms-transition: var(500ms) ease;
+  -o-transition: var(500ms) ease;
+}
+
+.menu.inactive {
+  display: none;
+}
+
+.Home {
+  background: url("./Images/ME.jpg");
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  filter: grayscale(50%);
+  padding: 2rem 0;
+  -webkit-filter: grayscale(50%);
+  display: flex;
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.Home .AsideLeft {
+  margin: 2rem 0 0 2rem;
+  width: 50%;
+  min-width: 50%;
+  max-width: 50%;
+}
+.Home .AsideLeft .container {
+  padding: 5rem 0;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.Home .AsideLeft .container h1 {
+  font-family: monospace;
+  letter-spacing: 4px;
+  font-weight: bold;
+  width: -moz-fit-content;
+  width: fit-content;
+  white-space: nowrap;
+  border-right: solid 2px black;
+  animation: typing 5.5s steps(23), blink 1s infinite;
+  -webkit-animation: typing 5.5s steps(23), blink 1s infinite;
+  overflow: hidden;
+}
+@keyframes typing {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blink {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
+}
+.Home .AsideLeft p {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5rem;
+  margin: 1rem 0rem 0 0;
+}
+.Home .AsideLeft button {
+  background-color: rgb(61, 3, 115);
+  border: none;
+  padding: 0.8rem;
+  margin: 2rem 0rem 0 0;
+  color: white;
+}
+.Home button:hover {
+  border-right: solid black 1px;
+  border-bottom: solid black 1px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+.Home .AsideRight {
+  margin: 0 0 0 2rem;
+  width: 50%;
+}
+.Home .AsideRight .ME {
+  width: 25rem;
+}
+.Home .AsideRight .tinder {
+  width: 25%;
+}
+
+.portfolio {
+  background: url("./Images/Tinder.png");
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 250px;
+  filter: grayscale(30%);
+  padding: 2rem 0;
+  -webkit-filter: grayscale(30%);
+  display: flex;
+  height: 50vh;
+}
+.portfolio .AsideLeft {
+  margin: 2rem 0 0 2rem;
+  width: 50%;
+  min-width: 50%;
+  max-width: 50%;
+}
+.portfolio .AsideLeft .container {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.portfolio .AsideLeft .container h1 {
+  font-family: monospace;
+  font-weight: bold;
+  width: -moz-max-content;
+  width: max-content;
+  border-right: solid 2px black;
+  padding-right: 2rem;
+  font-family: monospace;
+  letter-spacing: 4px;
+  font-weight: bold;
+  width: -moz-fit-content;
+  width: fit-content;
+  white-space: nowrap;
+  border-right: solid 2px black;
+  animation: typing 5.5s steps(37), blink 1s infinite;
+  -webkit-animation: typing 5.5s steps(37), blink 1s infinite;
+  overflow: hidden;
+}
+.portfolio .AsideLeft p {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5rem;
+  margin: 1rem 0rem 0 0;
+  width: 25rem;
+  color: black;
+}
+.portfolio .AsideLeft button {
+  background-color: rgb(61, 3, 115);
+  border: none;
+  padding: 0.8rem;
+  margin: 2rem 0rem 0 0;
+  color: white;
+}
+.portfolio button:hover {
+  border-right: solid black 1px;
+  border-bottom: solid black 1px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.arrow-container {
+  display: flex;
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.arrow-container .arrow {
+  width: 2rem;
+}
+
+.Sub_Section {
+  display: flex;
+  flex-direction: column;
+}
+.Sub_Section .Project {
+  display: flex;
+  margin: 0 0 5rem 0;
+}
+.Sub_Section .Project .AsideLeft {
+  width: -moz-max-content;
+  width: max-content;
+  height: -moz-max-content;
+  height: max-content;
+  box-shadow: 2px 2px 5px grey;
+  margin: 0 0 0 2rem;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+.Sub_Section .Project .AsideLeft img {
+  width: 23rem;
+}
+.Sub_Section .Project .AsideLeft .ProjectSummary {
+  background-color: rgb(61, 3, 115);
+  padding: 1rem;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.5rem;
+  border-radius: 0 0 1rem 1rem;
+  -webkit-border-radius: 0 0 1rem 1rem;
+  -moz-border-radius: 0 0 1rem 1rem;
+  -ms-border-radius: 0 0 1rem 1rem;
+  -o-border-radius: 0 0 1rem 1rem;
+}
+.Sub_Section .AsideRight {
+  margin: 0 0 5rem 4rem;
+  width: 25rem;
+}
+.Sub_Section .AsideRight h1 {
+  font-family: monospace;
+  margin: 2rem 2rem 1rem 0rem;
+}
+.Sub_Section .AsideRight p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0 2rem 1rem 0rem;
+}
+.Sub_Section .AsideRight button {
+  background-color: rgb(61, 3, 115);
+  color: white;
+  padding: 1rem;
+  border: none;
+  display: flex;
+}
+.Sub_Section .AsideRight button .icon {
+  width: 1rem;
+  margin: 0 1rem 0 0;
+}
+.Sub_Section .AsideRight button:hover {
+  background-color: transparent;
+  color: black;
+  padding: 1rem;
+  border: none;
+  display: flex;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.Sub_Section .AsideRight button:hover .icon {
+  background-color: black;
+  width: 1rem;
+  margin: 0 1rem 0 0;
+}
+
+.NavLink {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 782px) {
+  .Project {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .menu-container .Logo {
+    display: relative;
+    top: 5rem;
+  }
+  .menu-container .menu-trigger {
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    background: transparent;
+  }
+  .main-section p {
+    color: white;
+  }
+  .menu-Large {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .menu-container {
+    display: flex;
+  }
+  .menu-container .menu-trigger {
+    display: none;
+  }
+  .header {
+    border: none;
+  }
+  .header .menu-Large {
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+    margin: 0 3rem;
+  }
+  .header .menu-Large .menu-Lists {
+    list-style: none;
+    margin: 0 0 0 2rem;
+    font-family: monospace;
+  }
+  .header .menu-Large .NavLink {
+    color: black;
+    text-decoration: none;
+  }
+  .menu-Lists.active {
+    border-bottom: 1px solid rgb(61, 3, 115);
+  }
+  .menu-Lists.menu.inactive {
+    border: none;
+  }
+}/*# sourceMappingURL=Styles.css.map */
